@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useHistory } from 'react-router'
 import ErrorMessage from '../../components/ErrorMessage'
 import Categories from '../../data/Categories'
+import BannerImage from './quiz.svg'
 import './Home.css'
 
 const Home = ({ name, setName, fetchQuestions }) => {
@@ -91,7 +92,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
 					</Button>
 				</div>
 			</div>
-			<img src='/quiz.svg' className='banner' alt='quiz app' />
+			<img src={BannerImage} className='banner' alt='quiz app' />
 		</div>
 	)
 }
