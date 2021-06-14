@@ -1,0 +1,46 @@
+.instructions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.sub {
+	font-size: 25px;
+	border: 1px solid black;
+	box-shadow: 4px 4px 2px black;
+	padding: 5px 10px;
+	min-width: auto;
+}
+
+.wrapper {
+	margin: 50px auto;
+	background: #fff;
+	padding: 2em;
+}
+ol {
+	counter-reset: my-counter;
+	list-style-type: none;
+}
+
+ol li {
+	counter-increment: my-counter;
+	line-height: 1.5;
+}
+ol li:before {
+	content: counters(my-counter, '.') '.';
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-right: 3px;
+}
+
+.instructions__header {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #000;
+	border-bottom: 1px solid #39445a93;
+	margin-bottom: 1em;
+	text-align: center;
+}
